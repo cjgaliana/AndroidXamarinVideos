@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498DB</color>
+    <color name="colorPrimaryDark">#2C3E50</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="inverted_foreground_color">#FFFFFF</color>
+    <color name="session_background_color">#77D065</color>
+    <color name="playlist_background_color">#B455B6</color>
+</resources>

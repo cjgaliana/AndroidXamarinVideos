@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cjgaliana.xamarinvideos.Fragments.SessionDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/session_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/session_details_speaker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Speaker name" />
+
+        <TextView
+            android:id="@+id/session_details_track"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Track name" />
+
+        <ImageView
+            android:id="@+id/session_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/session_details_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description" />
+
+        <Button
+            android:id="@+id/session_details_downloadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download" />
+
+        <Button
+            android:id="@+id/session_details_deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/session_details_progressBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+</FrameLayout>
