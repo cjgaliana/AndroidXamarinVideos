@@ -11,7 +11,7 @@ import android.net.Uri;
 public class YoutubeHelper {
 
 
-    public static void OpenYoutubeVideoOnExternal(Context context, String videoID) {
+    public static void openYoutubeVideoOnExternal(Context context, String videoID) {
         try {
             // Try to open the Youtube app
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + videoID));
@@ -19,9 +19,12 @@ public class YoutubeHelper {
         } catch (ActivityNotFoundException ex) {
             // Fail? Then open it on the browser
             Intent intent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("http://www.youtube.com/watch?v=" + videoID));
+                    Uri.parse(getVideoUrl(videoID)));
             context.startActivity(intent);
         }
     }
 
+    public static String getVideoUrl(String youtubeID) {
+        return "http://www.youtube.com/watch?v=" + youtubeID;
+    }
 }

@@ -6,10 +6,10 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:paddingTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="16dp">
 
         <TextView
             android:id="@+id/session_details_title"
@@ -41,6 +41,12 @@
             android:text="Description" />
 
         <Button
+            android:id="@+id/session_details_playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+        <Button
             android:id="@+id/session_details_downloadButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,9 +59,10 @@
             android:text="Delete" />
 
         <!--<ProgressBar-->
-            <!--android:id="@+id/session_details_progressBar"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content" />-->
+        <!--android:id="@+id/session_details_progressBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
     </LinearLayout>
+
 
 </FrameLayout>
